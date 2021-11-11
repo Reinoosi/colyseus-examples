@@ -7,6 +7,7 @@ export class Player extends Schema {
 
     @type("number")
     y = Math.floor(Math.random() * 400);
+
 }
 
 export class State extends Schema {
@@ -63,5 +64,4 @@ export class StateHandlerRoom extends Room<State> {
     onDispose () {
         console.log("Dispose StateHandlerRoom");
     }
-
 }
